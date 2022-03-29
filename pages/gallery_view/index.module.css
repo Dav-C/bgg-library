@@ -1,0 +1,20 @@
+.pageLayout {
+    display: flex;
+    background-color: #000000;
+    min-height: 100vh;
+}
+.imageContainer {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    color: #FFFFFF;
+}
+
+.noContentWarning {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(1rem, 6vw, 2rem);
+}

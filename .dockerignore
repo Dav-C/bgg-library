@@ -1,0 +1,9 @@
+cypress
+.nyc_output
+coverage
+Dockerfile
+.dockerignore
+node_modules
+README.md
+.next
+.git

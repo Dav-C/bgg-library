@@ -1,0 +1,25 @@
+.buttonSmall {
+    border: none;
+    z-index: 10;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+    outline: 2px solid white;
+    background-color: #FFFFFF;
+}
+.buttonSmall:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+.buttonImage {
+    width: 100%;
+    height: 100%;
+}
+
+/* menu button colors */
+/* (dark): 0056FF */
+/* (light): 0000ff */
+
+/*close button colors*/
+/* (dark): 890010 */
+/* (light): FF001C */
+

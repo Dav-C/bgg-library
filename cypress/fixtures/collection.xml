@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><items totalitems="349" termsofuse="https://boardgamegeek.com/xmlapi/termsofuse" pubdate="Mon, 07 Mar 2022 23:33:05 +0000">
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Owned Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Owned Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Prev Owned Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="1" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Prev Owned Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="1" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Game For Trade</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="0" fortrade="1" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Game For Trade</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="0" fortrade="1" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Want Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="0" fortrade="0" want="1" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Want Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="0" fortrade="0" want="1" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Want to Play Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="0" fortrade="0" want="0" wanttoplay="1" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Want to Play Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="0" fortrade="0" want="0" wanttoplay="1" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Want to Buy Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="1" wishlist="0"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Want to Buy Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="1" wishlist="0"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Wishlist Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="1"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Wishlist Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="1"  preordered="0" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Preordered Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="1" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+	<item objecttype="thing" objectid="30549" subtype="boardgame" collid="46729709">
+		<name sortindex="1">Preordered Game</name>
+		<yearpublished>2000</yearpublished>
+		<image>/game_box_image.png</image>
+		<thumbnail>/game_box_image.png</thumbnail>
+		<status own="0" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="1" lastmodified="2018-09-14 16:28:58" />
+		<numplays>5</numplays>
+	</item>
+</items>
+

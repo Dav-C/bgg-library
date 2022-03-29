@@ -1,0 +1,75 @@
+.imageBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px;
+    border: 2px groove gray;
+    border-radius: .25rem;
+    transition: .3s;
+}
+.imageBoxHover {
+    border: .5rem solid white;
+    box-shadow: rgb(255, 255, 255) 0 0 30px -5px;
+}
+.noImage {
+    color: white;
+    font-size: clamp(.5rem, 4vw, 1.3rem);
+    text-justify: newspaper;
+    background-color: #404040;
+    padding: .5rem;
+
+}
+.noImage P {
+    text-align: center;
+    text-justify: newspaper;
+}
+.gameName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    width: 95%;
+    border-radius: .2rem;
+    position: absolute;
+    background-color: #404040;
+    padding: .3rem;
+    border: 1px solid black;
+    margin: .2rem 0 0 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+@media only screen
+and (min-width:320px) {
+    .imageBox {
+        width: 9rem;
+        height: 9rem;
+    }
+}
+@media only screen
+and (min-width:375px) {
+    .imageBox {
+        width: 10.5rem;
+        height: 10.5rem;
+    }
+}
+@media only screen
+and (min-width:480px) {
+    .imageBox {
+        width: 9rem;
+        height: 9rem;
+    }
+}
+@media only screen
+and (min-width:600px) {
+    .imageBox {
+        width: 11rem;
+        height: 11rem;
+    }
+}
+@media only screen
+and (min-width:1900px) {
+    .imageBox {
+        width: 12.75rem;
+        height: 12.75rem;
+    }
+}

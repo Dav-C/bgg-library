@@ -1,0 +1,56 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    overflow-x: hidden;
+    background: transparent;
+    padding: .5rem;
+    width: 80%;
+    max-width: 20rem;
+    max-height: 43rem;
+    left: -25rem;
+    transition: all 0.3s ease;
+    border-radius: .2rem;
+}
+.open {
+    left: 0;
+}
+.optionSwitchesSection {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px,
+                rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
+                rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+}
+.infoBox {
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0
+}
+.filtersSection {
+    transition: .5s;
+    overflow: hidden;
+}
+.filtersButton {
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.filtersOpenButton {
+    background-image: url(../public/icons/down-chevron.svg);
+}
+.filtersCloseButton {
+    background-image: url(../public/icons/up-chevron.svg);
+}
+
+@media only screen and (max-width:370px) {
+    .wrapper {
+        max-height: 33rem;
+    }
+}

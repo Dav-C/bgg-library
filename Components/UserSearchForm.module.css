@@ -1,0 +1,56 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem .5rem;
+    width: 80%;
+}
+.userNameInput {
+    font-size: 1.75rem;
+    margin: 1rem;
+    border: none;
+    border-bottom: 2px solid gray;
+    text-align: center;
+    width: 90%
+}
+.disabledButton {
+    font-size: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #838383;
+    color: white;
+    padding: .5rem;
+}
+.submitButton {
+    font-size: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: blue;
+    color: white;
+    padding: .5rem;
+}
+.submitButton:hover {
+    background-color: darkblue;
+}
+.submitButton:active {
+    background-color: green;
+}
+.errorMessage {
+    font-size: 1.25rem;
+    color: red;
+    padding: 1rem;
+    font-weight: 500;
+    width: 100%;
+}
+.errorCloseButton {
+    background-color: red;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: 1px solid darkslategrey;
+    padding: .5rem .8rem;
+    border-radius: 50%;
+    color: white;
+}
+.errorCloseButton:hover {
+    background-color: darkred;
+}
