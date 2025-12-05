@@ -1,9 +1,12 @@
-module.exports = {
-  reactStrictMode: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'standalone',
   images: {
-    domains: ['cf.geekdo-images.com'],
+    remotePatterns: [
+      { protocol: 'https', hostname: 'cf.geekdo-images.com' },
+      // { protocol: 'http', hostname: 'localhost', port: '3000' }, // if needed for dev
+    ],
   },
-  experimental: {
-    outputStandalone: true,
-  }
-}
+};
+
+module.exports = nextConfig;

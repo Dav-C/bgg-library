@@ -1,26 +1,26 @@
 ## INSTALL DEPENDENCIES ##
-FROM node:16-alpine AS deps
+FROM node:20-alpine3.19 AS deps
 WORKDIR /bgg-library
 COPY package.json package-lock.json ./
-RUN npm install ci --production
+RUN npm ci --production --ignore-scripts
 
 ## REBUILD SOURCE CODE ##
-FROM node:16-alpine AS builder
+FROM node:20-alpine3.19 AS builder
 WORKDIR /bgg-library
 COPY --from=deps /bgg-library/node_modules ./node_modules
 COPY . .
-# disable telemtry
-ENV NEXT_TELEMETRY_DISABLED 1
+# disable telemetry
+ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build
 
 ## PRODUCTION IMAGE ##
-FROM node:16-alpine AS runner
+FROM node:20-alpine3.19 AS runner
 WORKDIR /bgg-library
-ENV NODE_ENV production
-ENV NEXT_TELEMETRY_DISABLED 1
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
+RUN addgroup --system --gid 1001 nodejs && \
+    adduser --system --uid 1001 nextjs
 
 
 COPY --from=builder /bgg-library/next.config.js ./
@@ -37,6 +37,6 @@ USER nextjs
 
 EXPOSE 3000
 
-ENV PORT 3000
+ENV PORT=3000
 
 CMD ["node", "server.js"]
