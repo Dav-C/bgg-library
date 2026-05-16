@@ -56,8 +56,7 @@ const InfoBox = (props) => {
                 <section className={classes.detailSection}>
                     <div className={classes.imageContainer}>
                         <Image src={props.selectedGameData.imgUrl}
-                           layout="intrinsic"
-                           objectFit="contain"
+                           style={{ objectFit: "contain" }}
                            height={300} width={300}
                            alt="box art image"
                         />

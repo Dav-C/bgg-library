@@ -18,7 +18,6 @@ const formStatusSlice = createSlice({
         fetchComplete(state, action) {
             state.fetchStatus = 'complete'
             state.loading = false
-            state.fetchAttemptCount = 0
         },
         fetchProcessing(state, action) {
             state.fetchStatus = 'processing'

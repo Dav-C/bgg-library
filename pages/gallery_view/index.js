@@ -23,7 +23,6 @@ const GalleryViewPage = () => {
     const collectionFilters = userData.settings.collectionFilters
     const [filterInProgress, setFilterInProgress] = useState(true)
     const [filteredGames, setFilteredGames] = useState([])
-    let scrollPosition
 
     const {
         fetchIndividualGameData,
@@ -80,7 +79,6 @@ const GalleryViewPage = () => {
         fetchIndividualGameData(objectId).then(parseIndividualGameData)
     }
     const closeInfoBoxHandler = () => {
-        scrollPosition = window.scrollY
         dispatch(appStateActions.closeInfoBox())
         dispatch(userDataActions.resetSelectedGameData())
     }
