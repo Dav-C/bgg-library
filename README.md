@@ -10,9 +10,16 @@ Install dependencies
 
     npm install
 
+Create a `.env.local` file in the project root and add your BGG API token:
+
+    BGG_API_TOKEN=your_token_here
+
+This token is required by the server-side API routes (`/api/collection` and `/api/thing`) that proxy requests to the
+BoardGameGeek API. Without it the app will start but all library and game detail fetches will fail with a 500 error.
+
 Start the development server
 
-    npm dev start
+    npm run dev
 
 Open a browser and view the site
 
@@ -21,7 +28,7 @@ ___________________
 
 ### Using the App
 
-To load a user's library simply enter a valid Board Game Geek username into the form on the mane page and click the
+To load a user's library simply enter a valid Board Game Geek username into the form on the main page and click the
 <i>Load Library</i> button.
 
 BGG will cache the request for processing and return status 202 until the request has been processed. 
@@ -31,10 +38,10 @@ asking the user to wait for a short period before trying another request. Most u
 
 As soon as <code>UseFetchControl.js</code> receives a 200 status response, the XML returned by BGG is parsed and loaded
 into <code>userDataSlice.js</code>. <code>appStateSlice.js</code>, <code>formStatusSlice.js</code> and 
-<code>userDataSlice.js</code>are used to distribute data to the various components as needed.
+<code>userDataSlice.js</code> are used to distribute data to the various components as needed.
 
-Unfortunately error responses from the BGG API do not support CORS, so all errors are assumed to be due to an invalid 
-username(the most common scenario).
+All BGG API requests are proxied server-side through Next.js API routes to avoid CORS restrictions. The routes forward
+the response status and body back to the client unchanged.
 
 Once a library has been loaded the results can be filtered by using switches in the sidebar menu. Data does not persist 
 through refreshes. Any page refreshes will result in the app returning to its default state and the username input form
@@ -46,11 +53,20 @@ ___________________
 
 ### Testing
 
-All tests are run through Cypress. To run the tests, start the development server and run <code>cypress run</code>.
+All tests are run through Cypress (v15). The development server must be running before executing tests.
 
-Alternatively, you can interact with the cypress GUI with <code>cypress open</code>
+**Terminal 1** — start the dev server:
 
-Once the tests have completed the coverage report can be viewed by opening <code>overage/lcov-report/index.html</code>
-in a browser.
+    npm run dev
 
+**Terminal 2** — run the tests:
+
+    npx cypress run
+
+Alternatively, open the interactive Cypress GUI with:
+
+    npx cypress open
+
+Test specs are located in `cypress/e2e/tests/`. Once the tests have completed the coverage report can be viewed by
+opening `coverage/lcov-report/index.html` in a browser.
 

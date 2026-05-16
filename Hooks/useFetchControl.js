@@ -31,7 +31,7 @@ const useFetchControl = () => {
         dispatch(userDataActions.resetGameCollection())
         dispatch(userDataActions.setBggUserName(bggUserName))
         try {
-            let response = await fetch(`https://bgg.cc/xmlapi2/collection?username=${bggUserName}`)
+            let response = await fetch(`/api/collection?username=${encodeURIComponent(bggUserName)}`)
                 if (response.status === 200) {
                         return response.text()
                 }
@@ -143,7 +143,7 @@ const useFetchControl = () => {
 
     async function fetchIndividualGameData(objectId) {
         try {
-            let response = await fetch(`https://bgg.cc/xmlapi2/thing?id=${objectId}&stats=1`)
+            let response = await fetch(`/api/thing?id=${encodeURIComponent(objectId)}&stats=1`)
                 if (response.status === 200) {
                     return response.text()
                 }

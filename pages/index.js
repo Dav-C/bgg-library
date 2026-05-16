@@ -2,6 +2,7 @@ import classes from "./index.module.css"
 import UserSearchForm from "../Components/UserSearchForm";
 import Card from "../Components/Card";
 import ButtonSmall from "../Components/ButtonSmall";
+import Image from "next/image";
 import {useState} from "react";
 
 const Home = () => {
@@ -35,7 +36,7 @@ const Home = () => {
                             alt="close help button"
                             dataCy="mainPage-helpContentBox-closeButton"
                         />
-                        <h3 className={classes.helpBoxHeader}>What is ths?</h3>
+                        <h3 className={classes.helpBoxHeader}>What is this?</h3>
                         <p>
                             Board Game Library is a fun way to view a board game collection!</p>
                         <p>
@@ -81,6 +82,14 @@ const Home = () => {
                     dataCy="mainPage-helpContentBox-openButton"
                 />
             }
+            <a href="https://boardgamegeek.com" target="_blank" rel="noopener noreferrer" className={classes.bggBadge}>
+                <Image
+                    src="/icons/powered_by_BGG_01_SM.png"
+                    alt="Powered by BoardGameGeek"
+                    width={150}
+                    height={40}
+                />
+            </a>
         </main>
     )
 }

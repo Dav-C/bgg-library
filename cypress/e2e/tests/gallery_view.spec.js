@@ -1,12 +1,12 @@
 describe('test the gallery_view page', () => {
     beforeEach (() => {
-        cy.intercept('GET', 'https://bgg.cc/xmlapi2/collection?*', (req) =>{
+        cy.intercept('GET', '/api/collection*', (req) =>{
             req.reply({
                 statusCode: 200,
                 fixture: 'collection.xml',
             })
         });
-        cy.intercept('GET', 'https://bgg.cc/xmlapi2/thing?*', (req) =>{
+        cy.intercept('GET', '/api/thing*', (req) =>{
             req.reply({
                 statusCode: 200,
                 fixture: 'thing.xml',

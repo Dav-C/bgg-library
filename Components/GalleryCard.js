@@ -29,8 +29,9 @@ const GalleryCard = (props) => {
                     }
                     <Image
                         src={props.imgThumb}
-                        layout="fill"
-                        objectFit={mouseHover ? "contain" : "contain"}
+                        fill
+                        sizes="200px"
+                        style={{ objectFit: "contain" }}
                         quality={25}
                         placeholder={"blur"}
                         blurDataURL={props.imgThumb}

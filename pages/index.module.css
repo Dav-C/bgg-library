@@ -25,3 +25,10 @@
 .helpBoxHeader {
     text-align: center;
 }
+.bggBadge {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-top: 1rem;
+    display: inline-flex;
+}

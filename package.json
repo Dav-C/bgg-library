@@ -5,20 +5,24 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf .next"
+  },
+  "overrides": {
+    "postcss": ">=8.5.10"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.0",
     "babel-plugin-istanbul": "^6.1.1",
     "cypress": "^15.7.1",
     "next": "^16.0.7",
-    "react": "19.2.1",
-    "react-dom": "^19.2.1",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
     "react-redux": "^9.2.0",
     "sass": "^1.94.2"
   },
   "devDependencies": {
-    "@cypress/code-coverage": "^3.14.7",
+    "@cypress/code-coverage": "^4.0.3",
     "eslint": "^9.39.1",
     "eslint-config-next": "^16.0.7",
     "eslint-plugin-react": "^7.37.5"
